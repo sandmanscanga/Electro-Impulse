@@ -1,0 +1,38 @@
+{% extends "app/base.html" %}
+{% block content %}
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <h1 class="shadow-blue">Commercial Price List</h1>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="light-grey-shift txt-off-white">
+      <hr class="silent pt-5">
+      <div class="container text-center">
+        <h3>PRICES ARE SUBJECT TO CHANGE.<br>ALWAYS CONSULT FACTORY PRIOR TO PLACING AN ORDER.</h3>
+      </div>
+      <hr class="silent pt-5">
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <a href="/static/app/pdf/EIL_PPL.pdf" class="btn btn-lg price-btn" target="_blank"><p id="price-list-btn">Published Price List</p></a>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <p><big>All sales FOB our Neptune, NJ USA and include standard commercial packaging.<br>All orders subject to acceptance.</big></p>
+      <div class="d-inline-flex p-3">
+        <a href="/sales/warranty#_terms_and_conditions" class="btn btn-lg bg-steel steel-btn">Terms of Sale</a>
+      </div>
+      <div class="d-inline-flex p-3">
+        <a href="/sales/warranty" class="btn btn-lg bg-steel steel-btn">Warranty (12B)</a>
+      </div>
+    </div>
+
+    <hr class="silent pt-5">
+{% endblock content %}

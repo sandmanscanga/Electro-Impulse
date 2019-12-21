@@ -1,0 +1,242 @@
+{% extends "app/base.html" %}
+{% block content %}
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <h1 class="shadow-blue">Coolant Selection Chart</h1>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <div class="table-responsive light-grey-shift txt-off-white round p-4">
+        <table class="table table-borderless table-dark table-hover">
+          <thead class="blue-shift txt-white">
+            <tr>
+              <th class="align-middle" scope="col">Coolant</th>
+              <th class="align-middle" scope="col">Type</th>
+              <th class="align-middle" scope="col">Appearance Color</th>
+              <th class="align-middle" scope="col">Usable Temp Range (&deg;F)</th>
+              <th class="align-middle" scope="col">Specific Heat (Btu/lb/&deg;F) @100&deg;F</th>
+              <th class="align-middle" scope="col">Specific Gravity @100&deg;F</th>
+              <th class="align-middle" scope="col">Viscosity CS/SSU @100&deg;F</th>
+              <th class="align-middle" scope="col">K for P=F<strong>&times;</strong>&Delta;T<strong>&times;</strong>K& @100&deg;F</th>
+            </tr>
+          </thead>
+          <tbody class="light-grey-shift txt-off-white">
+            <tr>
+              <td class="align-middle">Water</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">35 to 212</td>
+              <td class="align-middle">0.997</td>
+              <td class="align-middle">0.9931</td>
+              <td class="align-middle">.7/<small>6</small></td>
+              <td class="align-middle">146</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Air <small>1</small></td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">0.240</td>
+              <td class="align-middle">0.075 <small>2</small></td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">0.316</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Ethylene Glycol 40% Water 60% (note 4)</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear <small>5</small></td>
+              <td class="align-middle">0 to 220</td>
+              <td class="align-middle">0.855</td>
+              <td class="align-middle">1.042</td>
+              <td class="align-middle">1.8/32</td>
+              <td class="align-middle">131</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Ethylene Glycol 50% Water 50% (note 4)</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear <small>5</small></td>
+              <td class="align-middle">-30 to 225</td>
+              <td class="align-middle">0.82</td>
+              <td class="align-middle">1.055</td>
+              <td class="align-middle">2.2/33.5</td>
+              <td class="align-middle">127</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Ethylene Glycol 60% Water 40% (note 4)</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear <small>5</small></td>
+              <td class="align-middle">-66 to 235</td>
+              <td class="align-middle">0.76</td>
+              <td class="align-middle">1.066</td>
+              <td class="align-middle">3.0/36</td>
+              <td class="align-middle">119</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Propylene Glycol 40% Water 60% (note 4)</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear <small>5</small></td>
+              <td class="align-middle">10 to 206</td>
+              <td class="align-middle">0.92</td>
+              <td class="align-middle">1.021</td>
+              <td class="align-middle">2.3/33.5</td>
+              <td class="align-middle">138</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Propylene Glycol 50% Water 50% (note 4)</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear <small>5</small></td>
+              <td class="align-middle">-25 to 210</td>
+              <td class="align-middle">0.862</td>
+              <td class="align-middle">1.027</td>
+              <td class="align-middle">3.2/36.8</td>
+              <td class="align-middle">130</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Propylene Glycol 60% Water 40% (note 4)</td>
+              <td class="align-middle">-</td>
+              <td class="align-middle">Clear <small>5</small></td>
+              <td class="align-middle">-50 to 217</td>
+              <td class="align-middle">0.825</td>
+              <td class="align-middle">1.03</td>
+              <td class="align-middle">4.5/41</td>
+              <td class="align-middle">125</td>
+            </tr>
+            <tr>
+              <td class="align-middle">PAO</td>
+              <td class="align-middle">Poly-alphaolefin</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-55 to 265</td>
+              <td class="align-middle">0.54</td>
+              <td class="align-middle">0.783</td>
+              <td class="align-middle">5.4/43</td>
+              <td class="align-middle">62</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Coolanol 20R</td>
+              <td class="align-middle">Silicate Ester</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-100 to 300</td>
+              <td class="align-middle">0.465</td>
+              <td class="align-middle">0.88</td>
+              <td class="align-middle">2.1/33</td>
+              <td class="align-middle">60</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Coolanol 25R</td>
+              <td class="align-middle">Silicate Ester</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-60 to 300</td>
+              <td class="align-middle">0.45</td>
+              <td class="align-middle">0.882</td>
+              <td class="align-middle">4.8/41</td>
+              <td class="align-middle">58</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Coolanol 35R</td>
+              <td class="align-middle">Silicate Ester</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-30 to 400</td>
+              <td class="align-middle">0.465</td>
+              <td class="align-middle">0.875</td>
+              <td class="align-middle">7.5/51</td>
+              <td class="align-middle">60</td>
+            </tr>
+            <tr>
+              <td class="align-middle">DC-200 <small>3</small></td>
+              <td class="align-middle">Dimethyl Silicon Fluid</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-90 to 390</td>
+              <td class="align-middle">0.41</td>
+              <td class="align-middle">0.872</td>
+              <td class="align-middle">2.0/32.6</td>
+              <td class="align-middle">53</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Dowtherm J</td>
+              <td class="align-middle">Aromatic Oil</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-70 to 358</td>
+              <td class="align-middle">0.45</td>
+              <td class="align-middle">0.85</td>
+              <td class="align-middle">.6/<small>6</small></td>
+              <td class="align-middle">56</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Dowtherm G</td>
+              <td class="align-middle">Aromatic Oil</td>
+              <td class="align-middle">Amber</td>
+              <td class="align-middle">40 to 575</td>
+              <td class="align-middle">0.387</td>
+              <td class="align-middle">1.09</td>
+              <td class="align-middle">8.19/53</td>
+              <td class="align-middle">62</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Diala AX 7 Univolt 33</td>
+              <td class="align-middle">Mineral Oil (Transformer)</td>
+              <td class="align-middle">Amber</td>
+              <td class="align-middle">30 to 310</td>
+              <td class="align-middle">0.44</td>
+              <td class="align-middle">0.874</td>
+              <td class="align-middle">10.2/60</td>
+              <td class="align-middle">57</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Marcol 87 (CS)</td>
+              <td class="align-middle">Mineral Oil (White Oil)</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">30 to 310</td>
+              <td class="align-middle">0.44</td>
+              <td class="align-middle">0.84</td>
+              <td class="align-middle">16.8/84</td>
+              <td class="align-middle">54</td>
+            </tr>
+            <tr>
+              <td class="align-middle">MIL-H-5606</td>
+              <td class="align-middle">Mineral Oil (Hydraulic)</td>
+              <td class="align-middle">Red</td>
+              <td class="align-middle">30 to 475</td>
+              <td class="align-middle">0.44</td>
+              <td class="align-middle">0.85</td>
+              <td class="align-middle">13.3/70</td>
+              <td class="align-middle">55</td>
+            </tr>
+            <tr>
+              <td class="align-middle">Fluorinert FC75/FC77/FC104</td>
+              <td class="align-middle">Fluoro-Carbon</td>
+              <td class="align-middle">Clear</td>
+              <td class="align-middle">-120 to 210</td>
+              <td class="align-middle">0.25</td>
+              <td class="align-middle">1.75</td>
+              <td class="align-middle">.63/<small>6</small></td>
+              <td class="align-middle">64</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="container">
+      <div class="light-grey-shift txt-off-white round p-4">
+        <p class="text-center"><big><strong>All Data Is Approximate - Not Responsible For Errors Or Omissions.</strong></big></p>
+        <p class="text-center"><big><strong>All properties at 100°F unless otherwise noted.</strong></big></p>
+        <hr class="silent pt-4">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>1.  Values given at sea level, 70°F.</big></p></li>
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>2.  Density in lb/ft³.</big></p></li>
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>3.  DC-200 is a brand name covering a family of coolants of various viscosities. Properties are those of a light grade: 2 centistokes at 25°C (77°F).</big></p></li>
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>4.  Special inhibitors may be required. Consult factory.</big></p></li>
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>5.  Commercial anti-freeze may be colored.</big></p></li>
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>6.  Below range of scale.</big></p></li>
+          <li class="list-group-item list-group-item-dark"><p class="m-0"><big>7.  Values given at 60° F.</big></p></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="silent pt-5">
+{% endblock content %}

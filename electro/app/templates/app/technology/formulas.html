@@ -1,0 +1,137 @@
+{% extends "app/base.html" %}
+{% block content %}
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <h1 class="shadow-blue">Useful Formulas and Conversions</h1>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!-- Temperature Rise Across a Heat Load - Liquid -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Temperature Rise Across a Heat Load:<br>Liquid Cooling Systems</h3><hr class="silent pt-3">
+      <p><big>In a liquid cooled system the heat rise of the coolant across a load 
+      can be related to its flow rate and the heat load by the general formula:</big></p>
+      <p class="text-center py-3"><big><strong>P = F&times;&Delta;T&times;SG&times;SH&times;145.7<br>or<br>&Delta;T = P/(F&times;SG&times;SH&times;145.7)</strong></big></p>
+      <p><big>Where:<br>P = Power or heat load, in Watts<br>F = Flow Rate, GPM<br><strong>&Delta;</strong>T = Temperature rise of the coolant, &deg;F<br>SG = Specific gravity of the coolant at average coolant temp.<br>SH = Specific heat of the coolant at average coolant temp., Btu/(lb<small>m</small> <strong>&times;</strong>&deg;F)</big></p>
+      <p><big>If the specific gravity and specific heat of the coolant are not known use "K" from the <a href="/technology/cooling-systems/coolant-select">coolant selection chart</a>, assuming 100&deg;F average coolant temperature, in the following formula:</big></p>
+      <p class="text-center py-3"><big><strong>P = F&times;&Delta;T&times;K<br>or<br>&Delta;T = P/(F&times;K)</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!-- Temperature Rise Across a Heat Load - Air -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Temperature Rise Across a Heat Load:<br>Air Cooling Systems</h3><hr class="silent pt-3">
+      <p><big>Air temperature rise across a heat load can be related to the air flow rate and the heat load by a similar formula:</big></p>
+      <p class="text-center py-3"><big><strong>P = C&times;&Delta;T&times;D&times;SH&times;17.58<br>or<br>&Delta;T = P/(C&times;D&times;SH&times;17.58)</strong></big></p>
+      <p><big>Where:<br>P = Power or heat load, in Watts<br>C = Flow Rate, CFM<br><strong>&Delta;</strong>T = Temperature rise of the air, &deg;F<br>D = Density of the air at average temp., lb<small>m</small>/ft&sup3;<br>SH = Specific heat of the air at average temp., Btu/(lb<small>m</small> &times;&deg;F)</big></p>
+      <p><big>If the density and specific heat of the air are not known use "K" from the <a href="/technology/cooling-systems/coolant-select">coolant selection chart</a>, assuming 70&deg;F average air temperature at sea level, in the following formula:</big></p>
+      <p class="text-center py-3"><big><strong>P = C&times;&Delta;T&times;K<br>or<br>&Delta;T = P/(C&times;K)</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!-- Conversion Factors -->
+    <!--Power         Conversion Factors -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Power Conversion Factors</h3><hr class="silent pt-3">
+      <p class="text-center"><big><strong>1W = 3.413 Btu/hr<br>1HP = 745.7 W</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!--Flow          Conversion Factors -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Flow Conversion Factors</h3><hr class="silent pt-3">
+      <p class="text-center"><big><strong>1 LPM = .264 GPM</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!--Specific Heat Conversion Factors -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+        <h3 class="text-center blue-shift txt-white border border-white round p-4">Specific Heat Conversion Factors</h3><hr class="silent pt-3">
+      <p class="text-center"><big><strong>1kj/(kg &times; &deg;C) = .23885 Btu/(lb<small>m</small> &times; &deg;F)</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!--Density       Conversion Factors -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Density Conversion Factors</h3><hr class="silent pt-3">
+      <p class="text-center"><big><strong>1kg/m<sup>3</sup> = .062428 lbm/ft<sup>3</sup></strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!--Pressure      Conversion Factors -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Pressure Conversion Factors</h3><hr class="silent pt-3">
+      <p class="text-center"><big><strong>1kPa = .145 psi<br>1 psi = 2.307 ft head</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!--Temperature   Conversion Factors -->
+    <div class="container light-grey-shift txt-off-white round p-4">
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Temperature Conversion Factors</h3><hr class="silent pt-3">
+      <p class="text-center"><big><strong>&deg;F = &deg;C &times; (9/5) + 32<br>&deg;C = (&deg;F-32) &times; (5/9)<br>K = &deg;C + 273.15</strong></big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="container text-center light-grey-shift txt-off-white round p-4">
+      <a name="_temperature_calculator"></a>
+      <h3 class="text-center blue-shift txt-white border border-white round p-4">Temperature Converter</h3><hr class="silent pt-3">
+      <p class="text-left"><big><strong>Type a value in any of the fields to convert between temperature measurements:</strong></big></p>
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <p><big><strong>Fahrenheit</strong></big></p>
+          <input id="inputFahrenheit" class="form-control" type="number"
+          min="-459.67" step="0.01" placeholder="Fahrenheit"
+          oninput="temperatureConverter(this.id,this.value)"
+          onchange="temperatureConverter(this.id,this.value)">
+        </div>
+        <div class="col-md-4 p-3">
+          <p><big><strong>Celsius</strong></big></p>
+          <input id="inputCelsius" class="form-control" type="number"
+          min="-273.15" step="0.01" placeholder="Celsius"
+          oninput="temperatureConverter(this.id,this.value)"
+          onchange="temperatureConverter(this.id,this.value)">
+        </div>
+        <div class="col-md-4 p-3">
+          <p><big><strong>Kelvin</strong></big></p>
+          <input id="inputKelvin" class="form-control" type="number"
+          min="0" step="0.01" placeholder="Kelvin"
+          oninput="temperatureConverter(this.id,this.value)"
+          onchange="temperatureConverter(this.id,this.value)">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+function temperatureConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+  var inputFahrenheit = document.getElementById("inputFahrenheit");
+  var inputCelsius = document.getElementById("inputCelsius");
+  var inputKelvin = document.getElementById("inputKelvin");
+  if (source=="inputFahrenheit") {
+    inputCelsius.value=((valNum-32)/1.8).toFixed(2);
+    inputKelvin.value=(((valNum-32)/1.8)+273.15).toFixed(2);
+  }
+  if (source=="inputCelsius") {
+    inputFahrenheit.value=((valNum*1.8)+32).toFixed(2);
+    inputKelvin.value=((valNum)+273.15).toFixed(2);
+  }
+  if (source=="inputKelvin") {
+    inputFahrenheit.value=(((valNum-273.15)*1.8)+32).toFixed(2);
+    inputCelsius.value=((valNum)-273.15).toFixed(2);
+  }
+}
+    </script>
+    </div>
+
+    <hr class="silent pt-5">
+           
+{% endblock content %}

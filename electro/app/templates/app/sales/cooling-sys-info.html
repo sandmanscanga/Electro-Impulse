@@ -1,0 +1,238 @@
+{% extends "app/base.html" %}
+{% block content %}
+    <hr class="silent pt-5">
+
+    <!-- Manual Request Header -->
+    <div class="container text-center">
+      <h1 class="shadow-blue">Cooling Systems Applications Questionnaire</h1>
+      <p class="pt-5"><big>Please email the following details to the address below.</big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!-- Manual Request Form -->
+    <form action="#" method="GET">
+
+      <div class="container">
+        <div class="light-grey-shift txt-off-white round p-4">
+
+          <hr class="silent pt-2">
+
+          <!-- Requestor's Information Form Section -->
+          <h3 class="text-center blue-shift txt-white border border-white round p-3">Requestor's Information</h3>
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Name</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Company</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Street Address 1</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Street Address 2</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>City/Town</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>State/Province</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Zip/Postal Code</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Phone</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Fax</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Email</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-2">
+
+        </div>
+      </div>
+
+      <hr class="silent pt-5">
+
+      <div class="container">
+        <div class="light-grey-shift txt-off-white round p-4">
+
+          <hr class="silent pt-2">
+
+          <!-- Unit & Manual Information Form Section -->
+          <h3 class="text-center blue-shift txt-white border border-white round p-3">Cooling Application Information</h3>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Equipment</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Equipment to be cooled</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Quanity Required</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small> </small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Date Required</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small> </small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Active Heat Load</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Active Heat Load (Btu/hr or Watts)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Coolant Type</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Type (Water, Glycol, PAO, etc.)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Flow Rate</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Flow Rate</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Supply Pressure</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Supply Pressure at Rated Flow</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Max. Pressure</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Maximum Pressure to Equipment (Blocked Discharge/No Flow)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Connections</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Connections</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Supply Temp</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Supply Temperature</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Max. Return Temp</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Maximum Return Temperature</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Purity Spec</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Coolant Purity Specifications (If Applicable)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Filtration</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Filtration (Particulate, Deionizer, Oxygen Removal, If Required)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Cooling Method</strong></big></p>
+          <select class="custom-select">
+            <option selected>Unknown</option>
+            <option value="1">CU - Liquid-to-Air, Non-refrigerated</option>
+            <option value="2">CUW - Liquid-to-Liquid, Non-refrigerated</option>
+            <option value="3">RU - Liquid-to-Air, Refrigerated</option>
+            <option value="4">RU - Liquid-to-Air, Refrigerated Split System</option>
+            <option value="5">RUW - Liquid-to-Liquid, Refrigerated</option>
+            <option value="6">RC - Air Circulating/Cooling Unit</option>
+          </select>
+          <p><small>Select A Cooling Method Option</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Input Power</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Prime Input Power (Voltage, 1 or 3 Phase, Frequency)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Indoor/Outdoor</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Environment - Indoor/Outdoor (Sheltered/Non-Sheltered)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Operating Temp</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Environment - Ambient Operating Temperature (Min-Max Range)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Storage Temp</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Environment - Ambient Storage Temperature (Min-Max Range)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Special Conditions</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Special Environmental Conditions (Airborne, Shipboard, Coastal Proximity, Altitude, etc.)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Mounting</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Mounting (Casters, Mounting Channels/Skids, Rack Mount, etc.)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Noise Limits</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Noise Limits (If Applicable)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Instrumentation</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Instrumentation (Gauges, Indicators, Flow Meter, etc.)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Interlocks</strong></big></p>
+          <input type="text" class="form-control">
+          <p><small>Interlocks (Flow, Temperature, Level, etc.)</small></p>
+
+          <hr class="silent pt-4">
+          <p><big><strong>Additional Specs</strong></big></p>
+          <textarea class="form-control" rows="3"></textarea>
+
+          <hr class="silent pt-2">
+
+        </div>
+      </div>
+
+      <hr class="silent pt-5">
+
+      <div class="container text-center p-4">
+        <div class="row align-items-center">
+          <div class="col-md-4 offset-md-2 blue-shift txt-white border border-dark round p-3">
+            <h3>Email to:</h3>
+            <p><big><i>sales@electroimpulse.com</i></big></p>
+          </div>
+          <div class="col-md-2 offset-md-1">
+            <button type="submit" class="btn btn-lg steel-btn txt-white p-4" onclick="print();"><h5 class="px-3 m-0">Print</h5></button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <hr class="silent pt-5">
+{% endblock content %}

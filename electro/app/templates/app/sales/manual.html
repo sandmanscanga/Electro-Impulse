@@ -1,0 +1,127 @@
+{% extends "app/base.html" %}
+{% block content %}
+    <hr class="silent pt-5">
+
+    <!-- Manual Request Header -->
+    <div class="container text-center">
+      <h1 class="shadow-blue">Manual Request Form</h1>
+      <p class="pt-5"><big>Please email the following details to the address below.</big></p>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <!-- Manual Request Form -->
+    <form action="#" method="GET">
+
+      <div class="container">
+        <div class="light-grey-shift txt-off-white round p-4">
+
+          <hr class="silent pt-2">
+
+          <!-- Requestor's Information Form Section -->
+          <h3 class="text-center blue-shift txt-white border border-white round p-3">Requestor's Information</h3>
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Name</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Company</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Street Address 1</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Street Address 2</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>City/Town</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>State/Province</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Zip/Postal Code</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Phone</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Fax</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Email</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-2">
+
+        </div>
+      </div>
+
+      <hr class="silent pt-5">
+
+      <div class="container">
+        <div class="light-grey-shift txt-off-white round p-4">
+
+          <hr class="silent pt-2">
+
+          <!-- Unit & Manual Information Form Section -->
+          <h3 class="text-center blue-shift txt-white border border-white round p-3">Unit & Manual Information</h3>
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Unit Model #</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Unit Serial #</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-4">
+
+          <p><big><strong>Unit Manual Title(s)</strong></big></p>
+          <input type="text" class="form-control">
+
+          <hr class="silent pt-2">
+
+        </div>
+      </div>
+
+      <hr class="silent pt-5">
+
+      <div class="container text-center p-4">
+        <!-- Submit Button -->
+        <div class="row align-items-center">
+          <div class="col-md-4 offset-md-2 blue-shift txt-white border border-dark round p-3">
+            <h3>Email to:</h3>
+            <p><big><i>sales@electroimpulse.com</i></big></p>
+          </div>
+          <div class="col-md-2 offset-md-1">
+            <button type="submit" class="btn btn-lg steel-btn txt-white p-4" onclick="print();"><h5 class="px-3 m-0">Print</h5></button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <hr class="silent pt-5">
+{% endblock content %}

@@ -1,0 +1,87 @@
+{% extends "app/base.html" %}
+{% block content %}
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <h1 class="shadow-blue">Cooling Equipment</h1>
+    </div>
+
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <div class="d-inline-flex p-3">
+        <a href="/products/cooling-equipment/refrigerated" class="btn btn-lg bg-steel steel-btn">Refrigerated Cooling Equipment</a>
+      </div>
+      <div class="d-inline-flex p-3">
+        <a href="/products/cooling-equipment/non-refrigerated" class="btn btn-lg bg-steel steel-btn">Non-Refrigerated Cooling Equipment</a>
+      </div>
+      <div class="d-inline-flex p-3">
+        <a href="/products/cooling-equipment/coolants-supported" class="btn btn-lg bg-steel steel-btn">Coolants Supported</a>
+      </div>
+    </div>
+    
+    <hr class="silent pt-5">
+
+    <div class="container text-center">
+      <div class="light-grey-shift txt-off-white round p-4">
+        <h3 class="text-center blue-shift txt-white border border-white round p-4">General Types of Cooling Methods - Advantages/Disadvantages</h3>
+        <hr class="silent pt-3">
+        <p class="text-left"><big>The general types of cooling methods are shown in the chart below. Other cooling methods such as ram air, liquid nitrogen cooling or other special cooling methods are also available.</big></p>
+        <hr class="silent pt-4">
+        <div class="table-responsive text-center">
+          <table class="table table-borderless table-dark table-hover">
+            <thead class="blue-shift txt-white">
+              <tr>
+                <th class="align-middle" scope="col">Type</th>
+                <th class="align-middle" scope="col">Model Series</th>
+                <th class="align-middle" scope="col">Advantages</th>
+                <th class="align-middle" scope="col">Disadvantages</th>
+              </tr>
+            </thead>
+            <tbody class="light-grey-shift txt-off-white">
+              <tr>
+                <td class="align-middle">Liquid-to-Air,<br>Non-refrigerated</td>
+                <td class="align-middle"><a href="/products/cooling-equipment/non-refrigerated/cu-series"><strong>CU</strong></a></td>
+                <td class="align-middle">Highly efficient<br>Economical<br>Simplest design</td>
+                <td class="align-middle">Dissipates heat into room<br>Primary recirculated coolant is always above ambient air temp</td>
+              </tr>
+              <tr>
+                <td class="align-middle">Liquid-to-Liquid*<br>Non-refrigerated</td>
+                <td class="align-middle"><a href="/products/cooling-equipment/non-refrigerated/cuw-series"><strong>CUW</strong></a></td>
+                <td class="align-middle">Quiet operation<br>Simplest design<br>Most Efficient<br>Cooling tap water is drawn only as needed</td>
+                <td class="align-middle">Primary recirculated coolant is always above secondary water temp<br>Availability of tap/facility water<br>Cost of tap/facility water</td>
+              </tr>
+              <tr>
+                <td class="align-middle">Liquid-to-Air,<br>Refrigerated</td>
+                <td class="align-middle"><a href="/products/cooling-equipment/refrigerated/ru-series"><strong>RU</strong></a></div></td>
+                <td class="align-middle">Best temp. control<br>Primary liquid is brought below ambient air temp.</td>
+                <td class="align-middle">Dissipates heat into room<br>More expensive than CU/CUW type</td>
+              </tr>
+              <tr>
+                <td class="align-middle">Liquid-to-Air,<br>Refrigerated Split<br>System</td>
+                <td class="align-middle"><a href="/products/cooling-equipment/refrigerated/split-systems"><strong>RU<br>split</strong></a></td>
+                <td class="align-middle">All advantages of one piece RU series<br>Heat is expelled outdoors<br>Quiet operation</td>
+                <td class="align-middle">Set-up cost<br>Typically more expensive than one piece RU series</td>
+              </tr>
+              <tr>
+                <td class="align-middle">Liquid-to-Liquid*,<br>Refrigerated</td>
+                <td class="align-middle"><a href="/products/cooling-equipment/refrigerated/ruw-series"><strong>RUW</strong></a></td>
+                <td class="align-middle">Best temp. control<br>Quiet operation<br>Primary liquid is brought below secondary (tap) water temp<br>Cooling tap water is drawn only as needed</td>
+                <td class="align-middle">Availability of tap/facility water<br>Cost of tap/facility water<br>More expensive than CU/CUW series</td>
+              </tr>
+              <tr>
+                <td class="align-middle">Air Circulating/<br>Cooling Unit<br><a href="/products/cooling-equipment/refrigerated/rc-refrig-series">Refrigerated</a> & <a href="/products/cooling-equipment/non-refrigerated/rc-non-refrig-series">Non-refrigerated</a></td>
+                <td class="align-middle txt-white"><a><strong>RC</strong></a></td>
+                <td class="align-middle">Circulates /cools air as primary medium<br>Can be refrigerated or direct heat exchange<br>Suitable for rack or cabinet cooling</td>
+                <td class="align-middle">Custom built series only-consult factory for details</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr class="silent border-top border-white pt-4">
+          <p><big>* Tap, facility water, or other liquid, provided by customer</big></p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="silent pt-5">
+{% endblock content %}

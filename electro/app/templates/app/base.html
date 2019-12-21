@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="application-name" content="electroimpulse.com">
+  <meta name="msapplication-tooltip" content="The official home of Electro Impulse Laboratories Inc.">
+  <meta name="apple-mobile-web-app-title" content="electroimpulse.com">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="cleartype" content="on">
+  <meta http-equiv="imagetoolbar" content="false">
+  <meta name="author" content="Adam Scanga">
+  <meta name="description" content="Electro Impulse Laboratory, Inc. is a leading supplier of specialized cooling equipment to the electronic and military industries">
+  <meta name="keywords" content="cooling system manufacturer, chiller, cooler, cooling, cooling systems, cooling units, refrigerated, refrigerated cooling, water cooled, air cooled, condensing unit, heat exchanger, glycol, PAO chiller, recirculating chiller, RF, dummy load, power meter, calorimeter">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/app/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/static/app/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/app/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/static/app/css/style.css">
+  <title>Electro Impulse Lab., Inc.</title>
+</head>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img width="200px" src="/static/app/img/base/EIL-Button.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="products_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div id="products-menu" class="dropdown-menu dropdown-menu-left electro-menu bg-steel" aria-labelledby="products_dropdown">
+                <a class="text-center" href="/products"><h3 class="top-level-heading p-2">Products</h3></a>
+                <div class="row text-center">
+                  <div class="col-lg-4">
+                    <p><a href="/products/cooling-equipment"><strong class="sub-menu-heading">Cooling Equipment</strong></a></p>
+                    <div class="cooling-equipment-column">
+                      <p class="pt-3"><a href="/products/cooling-equipment/refrigerated"><i class="cooling-submenu">Refrigerated</i></a></p>
+                      <p><a href="/products/cooling-equipment/refrigerated/ru-series">RU Series</a></p>
+                      <p><a href="/products/cooling-equipment/refrigerated/ruw-series">RUW Series</a></p>
+                      <p><a href="/products/cooling-equipment/refrigerated/split-systems">Split Systems</a></p>
+                      <p><a href="/products/cooling-equipment/refrigerated/rc-refrig-series">RC Series</a></p>
+                      <p class="pt-3"><a href="/products/cooling-equipment/non-refrigerated"><i class="cooling-submenu">Non-Refrigerated</i></a></p>
+                      <p><a href="/products/cooling-equipment/non-refrigerated/cu-series">CU Series</a></p>
+                      <p><a href="/products/cooling-equipment/non-refrigerated/cuw-series">CUW Series</a></p>
+                      <p><a href="/products/cooling-equipment/non-refrigerated/rc-non-refrig-series">RC Series</a></p>
+                      <p class="pt-3"><a href="/products/cooling-equipment/coolants-supported"><i class="cooling-submenu">Coolants Supported</i></a></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <p><a href="/products/hydraulic-filter"><strong class="sub-menu-heading">Hydraulic & Filtering Systems</strong></a></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <p><a href="/products/other-systems"><strong class="sub-menu-heading">Other Systems</strong></a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tech_info_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Technology Info
+              </a>
+              <div id="tech-info-menu" class="dropdown-menu dropdown-menu-right electro-menu bg-steel" aria-labelledby="tech_info_dropdown">
+                <a class="text-center" href="/technology"><h3 class="top-level-heading p-2">Technology Info</h3></a>
+                <div class="row text-center">
+                  <div class="col-lg-6">
+                    <p><a href="/technology/cooling-systems"><strong class="sub-menu-heading">Cooling Systems</strong></a></p>
+                    <p class="pt-3"><a href="/technology/cooling-systems/introduction">Introduction</a></p>
+                    <p><a href="/technology/cooling-systems/coolant-select">Coolant Selection Chart</a></p>
+                    <p><a href="/technology/cooling-systems/cooling-methods">Cooling Methods</a></p>
+                    <p><a href="/technology/cooling-systems/pumps-reservoirs">Pumps & Reservoirs</a></p>
+                    <p><a href="/technology/cooling-systems/closed-loop-sys">Closed Loop Systems</a></p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p><a href="/technology/formulas"><strong class="sub-menu-heading">Formulas & Conversions</strong></a></p>
+                    <p class="pt-3"><a href="/technology/formulas#_temperature_calculator">Temperature Conversion Calculator</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="/industries">Industries & Support</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="/sales/price-list">Commercial Price List</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sales_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sales & Support
+              </a>
+              <div id="sales-menu" class="dropdown-menu dropdown-menu-right electro-menu bg-steel" aria-labelledby="sales_dropdown">
+                <a class="text-center" href="/sales"><h3 class="top-level-heading p-2">Sales & Support</h3></a>
+                <div class="row text-center">
+                  <div class="col-12">
+                    <p><a href="/sales/price-list">Commercial Price List</a></p>
+                    <p><a href="/sales/cooling-sys-info">Cooling System Info</a></p>
+                    <p><a href="/sales/manual">Request Manual</a></p>
+                    <p><a href="/sales/warranty">Warranty</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="company_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Company
+              </a>
+              <div id="company-menu" class="dropdown-menu dropdown-menu-right electro-menu bg-steel" aria-labelledby="company_dropdown">
+                <a class="text-center" href="/company"><h3 class="top-level-heading p-2">Company</h3></a>
+                <div class="row text-center">
+                  <div class="col-12">
+                    <p><a href="/company/facilities">Company Facilities</a></p>
+                    <p><a href="/company/directions">Company Directions</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main role="main">
+    {% block content %}{% endblock content %}
+  </main>
+  <footer>
+    <div class="container-fluid bg-steel">
+      <div class="row text-center">
+        <div class="col-lg-4 mx-auto">
+          <hr class="light">
+          <img class="img-fluid" width="180" src="/static/app/img/base/EI_logo.png">
+          <hr class="light pb-2">
+          <p>Main Phone: (732) 776-5800</p>
+          <p>Alternate: (732) 741-0404</p>
+          <p>FAX: (732) 776-6793</p>
+          <p>sales@electroimpulse.com</p>
+          <p>1805 Route 33, P.O. Box 278</p>
+          <p>Neptune, New Jersey, USA 07754-0278</p>
+        </div>
+        <div class="col-lg-4 mx-auto">
+          <hr class="light">
+          <h5 class="txt-white"><strong><i>Our Hours</i></strong></h5>
+          <hr class="light">
+          <p>Monday: 7am - 4:30pm</p>
+          <p>Tuesday: 7am - 4:30pm</p>
+          <p>Wednesday: 7am - 4:30pm</p>
+          <p>Thursday: 7am - 4:30pm</p>
+          <p>Friday: Offices Closed</p>
+          <p>Saturday: Closed</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div class="col-lg-4 mx-auto">
+          <hr class="light">
+          <h5 class="txt-white"><strong><i>Certifications</i></strong></h5>
+          <hr class="light pb-4">
+          <a href="/static/app/pdf/Current_EIL_ISO_Certificate.pdf" target="_blank"><img height="180" src="/static/app/img/base/Quality-ISO-9001.jpg"/></a>
+          <p class="pt-4">ISO 9001:2015</p>
+          <p>Certificate Number</p>
+          <p>CERT-0127530</p>
+        </div>
+        <div class="col-12">
+          <hr class="light-100">
+          <h5>&copy; 2019 ELECTRO IMPULSE LAB., INC.</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="/static/app/js/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="/static/app/js/popper.min.js"></script>
+  <script type="text/javascript" src="/static/app/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/app/js/all.js"></script>
+</body>
+</html>
